@@ -1,0 +1,51 @@
+/* src/styles/TeamInfo.css */
+
+/* Container for the team information cards */
+.team-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Style for each team card */
+.team-card {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the team image */
+.team-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Style for the team name */
+.team-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Text styles for team details */
+.team-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .team-card {
+        width: 90%;
+    }
+}
