@@ -1,0 +1,71 @@
+/* src/styles/News.css */
+
+/* Main container for the recent updates section */
+.recent-updates-section {
+    background-color: #000000;
+    padding: 40px 20px;
+    border-top: 2px solid #A71930;
+}
+
+/* Title for the recent updates section */
+.recent-updates-section h2 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+}
+
+/* Container for the news cards */
+.news-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual news card styling */
+.news-card {
+    background-color: white;
+    width: 23%;
+    margin-bottom: 20px;
+    border: 2px solid #939393;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image styling within the news card */
+.news-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Padding and layout for the news content inside each card */
+.news-info {
+    padding: 10px;
+    flex: 1;
+}
+
+/* Title styling within the news content */
+.news-info h3 {
+    font-size: 18px;
+    color: black;
+    margin: 10px 0;
+}
+
+/* Description styling within the news content */
+.news-info p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* Hover effect for the news cards */
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
