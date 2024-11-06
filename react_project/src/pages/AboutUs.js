@@ -1,7 +1,7 @@
 // src/pages/AboutUs.js
 import React from 'react';
 import '../styles/AboutUs.css';
-import ImagePlaceholder from '../components/ImagePlaceholder';
+import ImagePlaceholder from '../components/ImagePlaceHolder';
 import SectionBox from '../components/SectionBox';
 import AboutUs1 from '../images/aboutus1.jpg';
 import AboutUs2 from '../images/aboutus2.jpg';
