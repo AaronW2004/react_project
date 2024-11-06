@@ -3,23 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fa141400
 }
 
 /* General Styles */
-body {
+.au-body {
     font-family: Arial, sans-serif;
     background-color: #A71930;
 }
 
 /* Container */
-.container {
+.au-container {
     display: flex;
     height: 100vh;
 }
 
-/* Left Column */
-.left-column {
+/* Column Layout */
+.au-left-column,
+.au-center-column,
+.au-right-column {
     width: 33.3%;
     display: flex;
     flex-direction: column;
@@ -27,14 +28,25 @@ body {
     padding: 20px;
 }
 
-.image-placeholder {
+/* Image Placeholder */
+.au-image-placeholder {
     background-color: #ccc;
     width: 100%;
     height: 290px;
     margin-bottom: 20px;
 }
 
-.box1 {
+/* Box Classes for Titles */
+.au-box1, .au-box2, .au-meet-the-team-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.au-box1 {
     background-color: #e0e0e0;
     padding: 20px;
     display: flex;
@@ -45,7 +57,7 @@ body {
     margin-bottom: 20px;
 }
 
-.box2 {
+.au-box2 {
     background-color: #e0e0e0;
     padding: 20px;
     display: flex;
@@ -56,7 +68,35 @@ body {
     margin-bottom: 20px;
 }
 
-.paragraph-box {
+.au-meet-the-team-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    height: 300px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Title Styling */
+.au-box1 h2, .au-box2 h2, .au-meet-the-team-box h2 {
+    font-size: 24px;
+    margin: 0;
+    color: black; /* Black text color for titles */
+}
+
+/* Paragraph Boxes */
+.au-paragraph-box, .au-paragraph-box2, .au-bordered-paragraph {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+}
+
+.au-paragraph-box {
     background-color: #fff;
     padding: 20px;
     height: 300px;
@@ -68,7 +108,7 @@ body {
     margin-bottom: 20px;
 }
 
-.paragraph-box2 {
+.au-paragraph-box2 {
     background-color: #fff;
     padding: 20px;
     font-weight: bold;
@@ -80,35 +120,7 @@ body {
     margin-bottom: 18px;
 }
 
-/* Center Column */
-.center-column {
-    width: 33.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.center-column .box {
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.center-column .paragraph-box {
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-/* Right Column */
-.right-column {
-    width: 33.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.bordered-paragraph {
+.au-bordered-paragraph {
     background-color: #fff;
     padding: 20px;
     display: flex;
@@ -120,81 +132,70 @@ body {
     margin-bottom: 20px;
 }
 
-.meet-the-team-box {
-    background-color: #e0e0e0;
-    padding: 20px;
-    height: 300px;
-    border: 1px solid #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+/* Paragraph Text Styling */
+.au-paragraph-box p, .au-paragraph-box2 p, .au-bordered-paragraph p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
 }
 
-.image-placeholder3 {
-    background-color: #ccc;
-    width: 100%;
-    height: 290px;
-    margin-bottom: 20px;
-}
-
+/* Responsive Adjustments */
 /* Large devices (desktops, 1200px and up) */
 @media (max-width: 1200px) {
-    .left-column, .center-column, .right-column {
+    .au-left-column, .au-center-column, .au-right-column {
         width: 33.3%;
     }
 }
 
 /* Medium devices (tablets, 992px and up) */
 @media (max-width: 992px) {
-    .container {
+    .au-container {
         flex-direction: column;
-        height: auto; /* Adjust container height for stacked columns */
+        height: auto;
     }
-    .left-column, .center-column, .right-column {
+    .au-left-column, .au-center-column, .au-right-column {
         width: 100%;
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
     }
-    .image-placeholder {
-        height: 200px; /* Adjust image height */
+    .au-image-placeholder {
+        height: 200px;
     }
-    .box1, .box2, .paragraph-box, .paragraph-box2, .bordered-paragraph {
-        height: auto; /* Let boxes adjust to their content */
+    .au-box1, .au-box2, .au-paragraph-box, .au-paragraph-box2, .au-bordered-paragraph, .au-meet-the-team-box {
         padding: 15px;
     }
 }
 
 /* Small devices (landscape phones, 768px and up) */
 @media (max-width: 768px) {
-    .box1, .box2 {
+    .au-box1, .au-box2 {
         font-size: 20px;
     }
-    .image-placeholder {
+    .au-image-placeholder {
         height: 150px;
     }
-    .paragraph-box, .paragraph-box2 {
+    .au-paragraph-box, .au-paragraph-box2, .au-bordered-paragraph {
         font-size: 14px;
     }
-    .meet-the-team-box {
-        height: auto;
+    .au-meet-the-team-box {
         font-size: 16px;
     }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-    .box1, .box2 {
+    .au-box1, .au-box2 {
         font-size: 16px;
         padding: 10px;
     }
-    .image-placeholder {
+    .au-image-placeholder {
         height: 120px;
     }
-    .paragraph-box, .paragraph-box2, .bordered-paragraph {
+    .au-paragraph-box, .au-paragraph-box2, .au-bordered-paragraph {
         font-size: 12px;
         padding: 10px;
     }
-    .meet-the-team-box {
+    .au-meet-the-team-box {
         font-size: 14px;
         padding: 10px;
     }

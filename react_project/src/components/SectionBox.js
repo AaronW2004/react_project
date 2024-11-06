@@ -1,11 +1,11 @@
 // src/components/SectionBox.js
 import React from 'react';
 
-function SectionBox({ title, text }) {
+function SectionBox({ title, text, className }) {
   return (
-    <div className="section-box">
-      {title && <h2>{title}</h2>}
-      <p>{text}</p>
+    <div className={className}>
+      <h2>{title}</h2>
+      {text && <p>{text}</p>}
     </div>
   );
 }

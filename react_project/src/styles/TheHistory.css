@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
+.th-body {
     font-family: Arial, sans-serif;
     background-color: #333333;
     margin: 20px;
     overflow-y: hidden;
 }
 
-.title-row {
+.th-title-row {
     background-color: #80000A;
     text-align: center;
     padding: 20px;
@@ -20,86 +20,75 @@ body {
     margin-bottom: 20px;
 }
 
-.content {
+.th-content {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.left-column, .right-column {
+.th-left-column, .th-right-column {
     width: 50%; 
 }
 
-.paragraph-box {
+.th-paragraph-box, .th-paragraph-box2 {
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    height: 52%;
+    height: auto; /* Adjusted to auto to fit content */
     font-size: 16px;
+    color: #000000; /* Set text color to black */
 }
 
-.paragraph-box2 {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    height: 52%;
-    font-size: 16px;
-}
-
-.image-placeholder {
+.th-image-placeholder {
     background-color: #000000;
-    height: 52%;
+    height: 200px; /* Set a fixed height to avoid full screen cover */
     margin-bottom: 20px;
     border-radius: 5px;
+    width: 100%; /* Make it fit within the container */
 }
 
 /* Large devices (desktops, 1200px and up) */
 @media (max-width: 1200px) {
-    .left-column, .right-column {
+    .th-left-column, .th-right-column {
         width: 50%;
     }
 }
 
 /* Medium devices (tablets, 992px and up) */
 @media (max-width: 992px) {
-    .left-column, .right-column {
+    .th-left-column, .th-right-column {
         width: 100%;
     }
-    .paragraph-box, .paragraph-box2 {
-        height: auto; /* Allow boxes to resize */
-    }
-    .image-placeholder {
+    .th-image-placeholder {
         height: 200px; /* Adjust image placeholder height */
     }
 }
 
 /* Small devices (landscape phones, 768px and up) */
 @media (max-width: 768px) {
-    .content {
+    .th-content {
         flex-direction: column; /* Stack columns */
     }
-    .paragraph-box, .paragraph-box2 {
+    .th-paragraph-box, .th-paragraph-box2 {
         font-size: 14px; /* Adjust text size */
     }
-    .image-placeholder {
+    .th-image-placeholder {
         height: 150px; /* Smaller image for smaller screens */
     }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-    .title-row {
+    .th-title-row {
         font-size: 1.5em; /* Reduce title size */
         padding: 10px;
     }
-    .paragraph-box, .paragraph-box2 {
+    .th-paragraph-box, .th-paragraph-box2 {
         font-size: 12px; /* Further reduce text size */
     }
-    .image-placeholder {
+    .th-image-placeholder {
         height: 100px;
     }
 }
