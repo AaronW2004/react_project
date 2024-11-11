@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Hub from './pages/Hub'; // Main hub page with menu
+import Hub from './pages/Hub'; 
 import AboutUs from './pages/AboutUs';
 import BOPrey from './pages/BOPrey';
 import GameSchedule from './components/GameSchedule';
@@ -11,7 +11,7 @@ import TheHistory from './pages/TheHistory';
 
 function App() {
   return (
-    <Router>
+    <Router baseName="/react_project/react_project">
       <Routes>
         <Route path="/" element={<Hub />} />
         <Route path="/about-us" element={<AboutUs />} />

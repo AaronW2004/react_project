@@ -1,4 +1,3 @@
-// src/pages/Hub.js
 import React, { useState } from 'react';
 import '../styles/Hub.css';
 import News from '../components/News';
@@ -14,7 +13,6 @@ function Hub() {
 
   return (
     <>
-      {/* Title Box should be outside the main container */}
       <div className="hub-title-box">
         <h1>Atlanta Sports Hub</h1>
       </div>
