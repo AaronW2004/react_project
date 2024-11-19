@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/root/react_project/static/css/main.48aaba93.css",
+    "main.js": "/root/react_project/static/js/main.75c5a4ff.js",
+    "static/media/aboutus2.jpg": "/root/react_project/static/media/aboutus2.565318900bc4255c4b8b.jpg",
+    "static/media/aboutus3.jpg": "/root/react_project/static/media/aboutus3.c1cd86b1014cb7f1c169.jpg",
+    "static/media/aboutus1.jpg": "/root/react_project/static/media/aboutus1.641a8601821ea2ad1713.jpg",
+    "static/media/news1.jpg": "/root/react_project/static/media/news1.ba727acb89180ed5d2a9.jpg",
+    "static/media/news3.jpg": "/root/react_project/static/media/news3.41131e803a12af4aaa48.jpg",
+    "static/media/boprey1.jpg": "/root/react_project/static/media/boprey1.18f0bd10e8a8e1442234.jpg",
+    "static/media/hub2.jpg": "/root/react_project/static/media/hub2.0979c3da510ecb76f1d0.jpg",
+    "static/media/hub1.jpg": "/root/react_project/static/media/hub1.36a3ec188a5fb9fb035d.jpg",
+    "static/media/boprey2.jpg": "/root/react_project/static/media/boprey2.233d5f399394d54430c1.jpg",
+    "static/media/news4.jpg": "/root/react_project/static/media/news4.3f3892c3b7b3147d5bcc.jpg",
+    "static/media/news2.jpg": "/root/react_project/static/media/news2.7f6079f79db7a86e9ab2.jpg",
+    "static/media/ph1.jpg": "/root/react_project/static/media/ph1.60329a28e11edf437c92.jpg",
+    "static/media/ph2.jpg": "/root/react_project/static/media/ph2.179d4e90940e092db964.jpg",
+    "index.html": "/root/react_project/index.html",
+    "main.48aaba93.css.map": "/root/react_project/static/css/main.48aaba93.css.map",
+    "main.75c5a4ff.js.map": "/root/react_project/static/js/main.75c5a4ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48aaba93.css",
+    "static/js/main.75c5a4ff.js"
+  ]
+}
