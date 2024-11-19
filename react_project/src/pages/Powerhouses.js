@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Powerhouses.css';
 import TitleBox from '../components/TitleBox';
-import ImagePlaceholder from '../components/ImagePlaceHolder';
+import ImagePlaceholder from '../components/ImagePlaceholder';
 import ButtonRow from '../components/ButtonRow';
 import ContentBox from '../components/ContentBox';
 import ph1 from '../images/ph1.jpg';
